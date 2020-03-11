@@ -1,0 +1,84 @@
+h1{
+    
+        padding-top: 37px;
+        padding-right: 25px;
+        padding-bottom: 37px;
+        padding-left: 25px;
+        font-size: 33px;
+        
+    
+}
+body{
+background-color:black;
+background-image: url(https://images.unsplash.com/photo-1527843812948-a8c2ddd2fb68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+}
+#first
+{
+ 
+text-align: center;
+border-style: dashed;
+font-style: italic;
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.4;
+border-width: thick;
+
+
+}
+#second
+{
+    text-align: center;
+border-style: dashed;
+font-style: italic;
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.4;
+border-width: thick;
+
+}
+#third
+{ 
+    text-align: center;
+border-style: dashed;
+font-style: italic;
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.4;
+border-width: thick;
+}
+#fourth
+{
+    text-align: center;
+    border-style: dashed;
+    font-style: italic;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.4;
+    border-width: thick;
+}
+#fifth
+{
+    text-align: center;
+    border-style: dashed;
+    font-style: italic;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.4;
+    border-width: thick;
+}
+#sixth
+{
+    text-align: center;
+border-style: dashed;
+font-style: italic;
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.4;
+border-width: thick;
+}

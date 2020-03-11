@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styling.css">
+    <script type = "text/javascript">
+    function Warn() 
+    {
+         alert ("This is a warning message!");
+         document.write ("This is a warning message!");
+               
+    }
+    function conf()
+    {
+
+        var check=confirm("Do you want to continue ?");
+        if(check===true)
+        document.write("This is true")
+        else
+        document.write("This is false")
+    }
+
+    function prom()
+    {
+        var temp =prompt("Enter your name : ",);
+        document.write("Your name is: " + temp);
+
+
+    }
+
+
+    </script>
+    <title>Document</title>
+    <style>
+        h1{
+            color:rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>For Alert Pop Up</h1>
+    <input type = "button" value = "Click Me" onclick = "Warn();" />
+    <h1>For Confirm Pop Up</h1>
+    <input type = "button" value = "Click Me" onclick = "conf();" />
+    <h1>For Prompt Pop Up</h1>
+    <input type = "button" value = "Click Me" onclick = "prom();" />
+    
+</body>
+</html>
