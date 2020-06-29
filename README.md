@@ -1,2 +1,2 @@
 # Web_lab
-web front end pages
+web frontend static pages
