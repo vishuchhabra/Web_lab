@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Simple Calulation Calculator</title>
+    <style>
+        input[type="button"]{
+            width: 100%;
+            box-sizing: border-box;
+            background:black;
+            color:white
+        }
+        Table{
+            width: 100px;
+            height : 300px
+        }
+    </style>
+
+    <!-- for java script  -->
+    <script>
+        function  adding (val){
+            document.getElementById('enter').value += val;
+        }
+
+        function  clearing(){
+            document.getElementById('enter').value=""
+        }
+
+        //sloving the result 
+        function  solving(){
+            try{
+                var id   = document.getElementById('enter').value
+                const result  = eval(id)
+                document.getElementById('enter').value = result
+            }
+            catch(err){
+                document.getElementById('enter').value ="Syntax Error"
+            }
+        }
+        
+
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="background:black;margin-left: 200px;margin-right: 200px; margin-top: 50px;" class="text-center text-white ">Mini Calculator</h1>
+        <div>
+        <Table style="border-style: solid;margin-left: auto;margin-right: auto;margin-top: 80px; " >
+            <tr>
+                <td colspan="3"  ><input type="text" value="" id="enter"></td>
+                <td><input type="button" value="Clear" onclick="clearing()"></input></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" value="1" name="" id="" onclick='adding("1")'></td>
+                <td><input type="button" value="2" name="" id="" onclick='adding("2")'></td>
+                <td><input type="button" value="3" name="" id="" onclick='adding("3")'></td>
+                <td><input type="button" value="/" name="" id="" onclick='adding("/")'></td>
+                
+                
+            </tr>
+            <tr>
+                <td><input type="button" value="4" name="" id="" onclick='adding("4")'></td>
+                <td><input type="button" value="5" name="" id=""  onclick='adding("5")'></td>
+                <td><input type="button" value="6" name="" id="" onclick='adding("6")'></td>
+                <td><input type="button" value="-" name="" id="" onclick='adding("-")'></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" value="7" name="" id=""  onclick='adding("7")'></td>
+                <td><input type="button" value="8" name="" id="" onclick='adding("8")' ></td>
+                <td><input type="button" value="9" name="" id="" onclick='adding("9")'></td>
+                <td><input type="button" value="+" name="" id=""  onclick='adding("+")'></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" value="." name="" id="" onclick='adding(".")'></td>
+                <td><input type="button" value="0" name="" id=""  onclick='adding("0")'></td>
+                <td><input type="button" value="=" name="" id=""  onclick='solving()'></td>
+                <td><input type="button" value="*" name="" id=""  onclick='adding("*")'></td>
+                
+            </tr>
+
+        </Table>
+    </div>
+        <!-- bootstrap closing part  -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/             reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
+</body>
+</html>
