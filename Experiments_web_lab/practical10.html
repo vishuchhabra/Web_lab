@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+             box-sizing: border-box;
+        }
+        body{
+            background: black
+
+        }
+        .container{
+            
+            background-color:white;
+            margin-top: 20px;
+            border: solid
+        }
+        input{
+            display:block;
+            margin-bottom: 20px;
+        }
+       
+    </style>
+
+    <!-- js  -->
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "" || x == null) {
+                window.alert("Name must be filled out");
+                return false;
+            }
+            // password validation 
+            var p = document.forms["myForm"]["pass"].value
+            var r = document.forms["myForm"]["rpass"].value
+
+            if( r!==p){
+                window.alert("Password Should match")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-center">
+        <form name="myForm" action="" onsubmit="return validateForm()" >
+        <h1>Registration Form(With Validations)</h1>
+        <p>Please fill in this form to create an account.</p>
+        </div>
+        <hr>
+        <label for=""><b>Name</b></label>
+        <input type="text" name="fname" id="" placeholder="Enter Name" required ></input>
+        <hr>
+        <label for=""><b>Email</b></label>
+        <input type="email" name="" id="" placeholder="Enter Email" required></input>
+        <hr>
+        <label for=""><b>Password</b></label>
+        <input type="password" name="pass" id="" placeholder="Enter Password" required></input>
+        <hr>
+        <label for=""><b>Repeat Password</b></label>
+        <input type="password" name="rpass" id="" placeholder="Reapeat Password" required></input>
+        <hr>
+        <div style="padding-left:0px; padding-right:400px" >
+        <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom:20px">Submit</button>
+    </div>
+    </form>
+
+    </div>
+    <!-- bootstrap closing part  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/             reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
