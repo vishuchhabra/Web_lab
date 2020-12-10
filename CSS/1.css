@@ -1,0 +1,38 @@
+label{
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+input[type=text], select {
+    width: 100%;
+    background-color: white;
+    border: 2px solid white;
+    padding:10px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 100%;
+    padding:10px 5px;
+    border: 2px solid white;
+    margin-top: 30px;
+
+}
+
+input[type=submit]:hover{
+    background-color:black;
+    color: white;
+}
+
+.container{
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
+    background-color: rgb(228, 224, 224)
+}
+h2#text{
+    text-align: center;
+}
